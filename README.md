@@ -40,11 +40,12 @@ Create or edit ```privateKeys.json``` to include your Ethereum private keys as a
 Example privateKeys.json (correct format):
 ```
 [
-    "private_key_1_here",
-    "private_key_2_here"
+    "private_key_1_here"
 ]
 ```
 Ensure each private key string is correctly formatted as shown above.
+
+# note: for now its only support 1 pk, if you want to run more than 1 pk, just copy the repo and add others pk
 
 Usage
 
