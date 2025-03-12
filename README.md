@@ -18,7 +18,7 @@ Node.js
 
 npm (Node Package Manager)
 
-mint this [NFT](https://zesty-n2m-nadz.testnet.nfts2.me/) to run the script, YOU SHOULD MINT THIS NFT, IF YOU DIDNT MINT THIS NFT, YOU CANT RUN THE SCRIPT
+### mint this [NFT](https://zesty-n2m-nadz.testnet.nfts2.me/) to run the script, YOU SHOULD MINT THIS NFT, IF YOU DIDNT MINT THIS NFT, YOU CANT RUN THE SCRIPT
 
 ## Installation
 
@@ -45,7 +45,7 @@ Example privateKeys.json (correct format):
 ```
 Ensure each private key string is correctly formatted as shown above.
 
-# note: for now its only support 1 pk, if you want to run more than 1 pk, just copy the repo and add others pk
+### note: for now its only support 1 pk, if you want to run more than 1 pk, just copy the repo and add others pk. multiple pk still in development, soon will release
 
 Usage
 
