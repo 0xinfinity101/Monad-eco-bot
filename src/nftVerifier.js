@@ -1,6 +1,6 @@
 const { ethers } = require("ethers");
 
-// ABI minimal untuk memeriksa kepemilikan NFT
+
 const NFT_ABI = [
     "function balanceOf(address owner) view returns (uint256)",
     "function ownerOf(uint256 tokenId) view returns (address)"
